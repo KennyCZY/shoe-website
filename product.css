@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#now{
+    color: purple;
+}
+
+section nav .logo{
+    font-size: 35px;
+    color: #c72092;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+section nav .logo span{
+    color: #6c14d0;
+    text-decoration: underline;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 12px 5px 10px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+section nav ul li a:hover{
+    color: #c72092;
+    text-decoration: underline;
+}
+
+#active{
+    color: purple;
+}
+
+
+.social_icon{
+    position: fixed;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+}
+
+.social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social_icon i:hover{
+    color: #c72092;
+}
+
+section nav .icons i:hover{
+    color: #c72092;
+}
+
+.products{
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+}
+
+.products h1 span{
+    background: linear-gradient(to right, #c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.products h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.products .box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 28px;
+}
+
+.products .box .card{
+    margin: 30px;
+    margin-left: 50p;
+    margin-right: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 10px;
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    background: #f6f6f6;
+}
+.products .box .card:hover{
+    margin: 30px;
+    margin-left: 50p;
+    margin-right: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 10px;
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 11px #6c14d0;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    background: #f6f6f6;
+}
+
+.products .box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.products .box .card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.products .box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .box .card .image img{
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+
+.products .box .card:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .box .card .small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.products .box .card .small_card i:hover{
+    color: #c72092;
+}
+
+.products .box .card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.products .box .card .products_text p{
+    color: rgba(111, 111, 111, 0.656);
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+.products .box .card .products_text h3{
+    margin: 7px 0;
+}
+
+.products .box .card .products_text .products_star{
+    color: orange;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+.products .box .card .products_text .ATCbtn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #c72092 , #6c14d0);
+    color: white;
+    border-radius: 12px;
+}
+
+.products .box .card .products_text .ATCbtn:hover{
+    text-decoration: none;
+    padding: 12px 22px;
+    background: linear-gradient(to , #c72092 , #6c14d0);
+    color: white;
+    border-radius: 12px; 
+}
+
+
+
+footer .footer-col .social a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+}
+
+footer .contact {
+    margin-right: 0;
+
+}
+
+footer .contact li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+footer .contact li span:nth-child(1) {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+footer .contact li span {
+    color: black;
+}
+
+footer .contact li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .contact li a:hover {
+    color: #6c14d0;
+}
+footer .footer-col .social a:hover i{
+    color: white;
+}
+footer .footer-col .social a:hover {
+    background: linear-gradient(-45deg, #c72092 , #6c14d0);
+}
+
+@media(max-width: 764px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+footer .footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer .footer {
+
+    background: #f3f1f1;
+    padding: 50px 0;
+}
+
+footer .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    color: #bbbbbb;
+}
+
+footer .footer-col h4 {
+    font-size: 18px;
+    color: #1c0080;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+footer .footer-col h4::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #6c14d0;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+footer .brands {
+    margin-right: 0;
+}
+
+footer .brands li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+footer .brands li span:nth-child(1) {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+footer .brands li span {
+    color: black;
+}
+
+footer .brands li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .brands li a:hover {
+    color: #6c14d0;
+    text-decoration: underline;
+}
+
+@media(max-width: 1024px) {
+    section .main .main_content .main_text p{
+        width: 400px;
+        text-align: justify;
+        line-height: 21px;
+        position: relative;
+        top: 85px;
+        left: 5%;
+        padding-bottom: 100px;
+    }
+    .products .box{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 130px;
+    }
+    
+    .products .box .card{
+        margin: 30px;
+        margin-left: 50p;
+        margin-right: 50px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 10px;
+        width: 290px;
+        height: 440px;
+        box-shadow: 0 0 8px #6c14d0;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 10px;
+        background: #f6f6f6;
+    }
+    
+}

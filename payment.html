@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Stepz</title>
+    <script src="https://use.fontawesome.com/fbf13eceb7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="payment.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <nav>
+            <div class="logo">
+                <h1>Step<span>z</span></h1>
+            </div>
+
+            <ul>
+                <li><a id="active" href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Servises">News</a></li>
+                <li><a href="#Membership">Become a member</a></li>
+            </ul>
+
+            <div class="icons">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+
+        </nav>
+    </section>
+
+    <div class="container">
+        <div class="color"></div>
+        <div class="form">
+            <h3>Payment informations</h3>
+            <form>
+                <div>
+                    <label id="title">PAYMENT METHOD</label>
+                    <span id="option">
+                        <select id="payment-option">
+                            <option value="Credit/Debit Card">Credit/Debit Card</option>
+                            <option value="TnG">Touch 'n Go E-Wallet</option>
+                            <option value="Online Banking">Online Banking</option>
+                            <option value="COD">Cash On Delivery</option>
+                        </select>
+                    </span>
+                </div>
+                <div id="payment-detail1">
+                    <div>
+                        <label>CARDHOLDER'S NAME</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label>CARD NUMBER</label>
+                        <input type="text" name="CCN">
+                    </div>
+                    <div>
+                        <span class="expiry">
+                            <label>EXPIRATION DATE</label>
+                            <span class="select">
+                                <select class="small">
+                                    <option value="JAN">JANUARY</option>
+                                    <option value="FEB">FEBRUARY</option>
+                                    <option value="MARCH">MARCH</option>
+                                    <option value="APRIL">APRIL</option>
+                                    <option value="MAY">MAY</option>
+                                    <option value="JUN">JUNE</option>
+                                    <option value="JUL">JULY</option>
+                                    <option value="AUG">AUGUST</option>
+                                    <option value="SEP">SEPMTEMBER</option>
+                                    <option value="OCT">OCTOBER</option>
+                                    <option value="NOV">NOVEMBER</option>
+                                    <option value="DEC">DECEMBER</option>
+                                </select>
+                            </span>
+                            <span class="select">
+                                <select class="small">
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                </select>
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="sec">
+                            <label>SECURITY CODE</label>
+                            <input type="text" name="sec" maxlength="3" />
+                        </span>
+                    </div>
+                </div>
+                <div id="payment-detail2">
+                    <div>
+                        <img src="/image/QR.png" alt="TnG QR Code">
+                    </div>
+                </div>
+                <div id="payment-detail3">
+                    <label>Select your Bank</label>
+                    <span class="select">
+                        <select>
+                            <option value="AFFIN">Affin Bank Berhad/ Affin Islamic Bank</option>
+                            <option value="Alliance">Alliance Bank Malaysia Berhad</option>
+                            <option value="Ambank">Ambank Berhad</option>
+                            <option value="Islam">Bank Islam Malaysia</option>
+                            <option value="RAKYAT">Bank Kerjasama Rakyat Malaysia Berhad</option>
+                            <option value="Alliance">Alliance Bank Malaysia Berhad</option>
+                            <option value="Ambank">Ambank Berhad</option>
+                            <option value="Islam">Bank Islam Malaysia</option>
+                            <option value="China">Bank of China (Malaysia) Berhad</option>
+                            <option value="AGRO">Bank Pertanian Malaysia Berhad (Agrobank)</option>
+                            <option value="BSN">Bank Simpanan Nasional Berhad</option>
+                            <option value="CIMB">CIMB Bank Berhad/ CIMB Islamic</option>
+                            <option value="Citibank">Citibank Berhad</option>
+                            <option value="HL">Hong Leong Bank</option>
+                            <option value="HSBC">HSBC Bank Malaysia Berhad</option>
+                            <option value="MAYBANK">Maybank/ Maybank Islamic</option>
+                            <option value="OCBC">OCBC Bank (Malaysia) Berhad</option>
+                            <option value="PB">Public Bank</option>
+                            <option value="RHB">RHB Bank</option>
+                            <option value="UOB">UOB (United Overseas Bank Berhad)</option>
+                        </select>
+                    </span>
+                </div>
+                <div id="back">
+                    <a href="home.html" id="button">PURCHASE SAFELY</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Information</h4>
+                        <div class="brands">
+                            <ul>
+                                <li>
+                                    <p><a href="#">FAQ</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#">Livechat</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#">Customer Review</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Brands</h4>
+                        <div class="brands">
+                            <ul>
+                                <li>
+                                    <p><a href="#">Adidas</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#">Adidas</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="#">Adidas</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <div class="contact">
+                            <ul>
+                                <li>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                    <span>G-32, Berjaya Times Square,<br>No.1, Jalan Imbi,<br>53300 Kuala
+                                        Lumpur,<br>Malaysia.</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-phone"></i></span>
+                                    <p><a href="tel:0162069257">016-2069257</a></p>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-envelope"></i></span>
+                                    <p><a href="mailo:stepzmalaysia@gmail.com">stepzmalaysia@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Social Media</h4>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
